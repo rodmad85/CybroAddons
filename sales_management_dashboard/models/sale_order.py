@@ -19,8 +19,9 @@
 #    If not, see <http://www.gnu.org/licenses/>.
 #
 #############################################################################
-from odoo import models, api, fields
 from datetime import date, timedelta
+
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
 
@@ -45,7 +46,7 @@ class SaleOrder(models.Model):
 
         elif filter_key == 'custom' and custom_start and custom_end:
             if custom_end < custom_start:
-                raise UserError("Please select a valid range")
+                raise UserError(_("Please select a valid range"))
             return custom_start, custom_end
 
         return None, None

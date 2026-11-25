@@ -1,0 +1,258 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sales_management_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-25 04:13+0000\n"
+"PO-Revision-Date: 2026-11-25 04:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "All Categories"
+msgstr "Todas as categorias"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Amount"
+msgstr "Valor"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Average Order Value"
+msgstr "Valor médio do pedido"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Count"
+msgstr "Total"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Custom Range"
+msgstr "Período personalizado"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: sales_management_dashboard
+#: model:ir.actions.client,name:sales_management_dashboard.action_sales_dashboard
+msgid "Dashboard"
+msgstr "Painel"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/js/sales_dashboard.js:0
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Fully Invoiced"
+msgstr "Totalmente faturado"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Global Filter:"
+msgstr "Filtro global:"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Invoice Status"
+msgstr "Status da fatura"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Least Selling Products"
+msgstr "Produtos menos vendidos"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Limit:"
+msgstr "Limite:"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "New Customers"
+msgstr "Novos clientes"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "New vs Returning Customers"
+msgstr "Clientes novos vs. recorrentes"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Order Conversion Rate"
+msgstr "Taxa de conversão de pedidos"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Order Status"
+msgstr "Situação do pedido"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Orders to Invoice"
+msgstr "Pedidos a faturar"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Overdue Customers"
+msgstr "Clientes com faturas vencidas"
+
+#. module: sales_management_dashboard
+#. odoo-python
+#: code:addons/sales_management_dashboard/models/sale_order.py:0
+msgid "Please select a valid range"
+msgstr "Selecione um intervalo válido"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Product"
+msgstr "Produto"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Quantity Sold"
+msgstr "Quantidade vendida"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/js/sales_dashboard.js:0
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Quotations"
+msgstr "Cotações"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Returning Customers"
+msgstr "Clientes recorrentes"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/js/sales_dashboard.js:0
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Sale Orders"
+msgstr "Pedidos de venda"
+
+#. module: sales_management_dashboard
+#: model:ir.ui.menu,name:sales_management_dashboard.menu_sales_dashboard_root
+msgid "Sales Dashboard"
+msgstr "Painel de Vendas"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Sales by Person"
+msgstr "Vendas por vendedor"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Sales by Team"
+msgstr "Vendas por equipe"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Select Period"
+msgstr "Selecionar período"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Status"
+msgstr "Situação"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Team"
+msgstr "Equipe"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "This Month"
+msgstr "Este mês"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "This Week"
+msgstr "Esta semana"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "This Year"
+msgstr "Este ano"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/js/sales_dashboard.js:0
+msgid "To Invoice"
+msgstr "A faturar"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Top Customers"
+msgstr "Principais clientes"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Top Selling Products"
+msgstr "Produtos mais vendidos"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Total Revenue MTD"
+msgstr "Receita total do mês"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "Total Revenue YTD"
+msgstr "Receita total do ano"
+
+#. module: sales_management_dashboard
+#. odoo-javascript
+#: code:addons/sales_management_dashboard/static/src/xml/sales_dashboard.xml:0
+msgid "📊 Sales Dashboard"
+msgstr "📊 Painel de Vendas"
