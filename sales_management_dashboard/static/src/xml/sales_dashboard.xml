@@ -258,7 +258,7 @@
                                     <t t-foreach="state.data.sales_by_team || []" t-as="team" t-key="team.id">
                                         <tr class="clickable-row" t-on-click="() => goToRecord('crm.team', team.id)">
                                             <td t-esc="team.name"/>
-                                            <td class="text-end fw-bold" t-esc="team.amount"/>
+                                            <td class="text-end fw-bold" t-esc="team.amount_formatted"/>
                                         </tr>
                                     </t>
                                 </tbody>
@@ -289,7 +289,7 @@
                                     <t t-foreach="state.data.sales_by_person || []" t-as="person" t-key="person.id">
                                         <tr class="clickable-row" t-on-click="() => goToRecord('res.users', person.id)">
                                             <td t-esc="person.name"/>
-                                            <td class="text-end fw-bold" t-esc="person.amount"/>
+                                            <td class="text-end fw-bold" t-esc="person.amount_formatted"/>
                                         </tr>
                                     </t>
                                 </tbody>
@@ -405,7 +405,7 @@
                                     <t t-foreach="state.data.top_customers || []" t-as="cust" t-key="cust.id">
                                         <tr class="clickable-row" t-on-click="() => goToRecord('res.partner', cust.id)">
                                             <td t-esc="cust.name"/>
-                                            <td class="text-end fw-bold" t-esc="cust.amount"/>
+                                            <td class="text-end fw-bold" t-esc="cust.amount_formatted"/>
                                         </tr>
                                     </t>
                                 </tbody>
@@ -504,7 +504,7 @@
                                     <t t-foreach="state.data.overdue_customers || []" t-as="cust" t-key="cust.id">
                                         <tr class="clickable-row" t-on-click="() => goToRecord('res.partner', cust.id)">
                                             <td t-esc="cust.name"/>
-                                            <td class="text-end fw-bold" t-esc="cust.amount"/>
+                                            <td class="text-end fw-bold" t-esc="cust.amount_formatted"/>
                                         </tr>
                                     </t>
                                 </tbody>

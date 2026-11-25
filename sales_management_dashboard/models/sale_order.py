@@ -85,6 +85,11 @@ class SaleOrder(models.Model):
         """Fetches the datas to be displayed"""
         filters = filters or {}
         limit = int(filters.get("limit", 10))
+        company_currency = self.env.company.currency_id
+
+        def format_amount(amount):
+            """Format an amount using the company currency."""
+            return company_currency.format(amount)
 
         def get_filter_key(specific_filter_key):
             """Build and return a domain combining base_domain with global date filters."""
@@ -120,14 +125,18 @@ class SaleOrder(models.Model):
         team_domain = build_domain([('state', 'in', ['sale', 'done'])], "team_filter")
         sales_by_team = self.read_group(team_domain, ['amount_total'], ['team_id'], limit=limit, orderby='amount_total desc')
         teams = [
-            {'id': rec['team_id'][0], 'name': rec['team_id'][1], 'amount': rec['amount_total']}
+            {'id': rec['team_id'][0], 'name': rec['team_id'][1],
+             'amount': rec['amount_total'],
+             'amount_formatted': format_amount(rec['amount_total'])}
             for rec in sales_by_team if rec['team_id']
         ]
 
         person_domain = build_domain([('state', 'in', ['sale', 'done'])], "person_filter")
         sales_by_person = self.read_group(person_domain, ['amount_total'], ['user_id'], limit=limit, orderby='amount_total desc')
         persons = [
-            {'id': rec['user_id'][0], 'name': rec['user_id'][1], 'amount': rec['amount_total']}
+            {'id': rec['user_id'][0], 'name': rec['user_id'][1],
+             'amount': rec['amount_total'],
+             'amount_formatted': format_amount(rec['amount_total'])}
             for rec in sales_by_person if rec['user_id']
         ]
 
@@ -135,7 +144,9 @@ class SaleOrder(models.Model):
         customers_grouped = self.read_group(customer_domain, ['amount_total'], ['partner_id'],
                                             limit=limit, orderby='amount_total desc')
         customers = [
-            {'id': rec['partner_id'][0], 'name': rec['partner_id'][1], 'amount': rec['amount_total']}
+            {'id': rec['partner_id'][0], 'name': rec['partner_id'][1],
+             'amount': rec['amount_total'],
+             'amount_formatted': format_amount(rec['amount_total'])}
             for rec in customers_grouped if rec['partner_id']
         ]
 
@@ -202,7 +213,9 @@ class SaleOrder(models.Model):
             overdue_customers_domain, ['amount_total'], ['partner_id'], orderby='amount_total desc', limit=limit
         )
         overdue_customers =[
-            {'id': rec['partner_id'][0], 'name': rec['partner_id'][1], 'amount': rec['amount_total']}
+            {'id': rec['partner_id'][0], 'name': rec['partner_id'][1],
+             'amount': rec['amount_total'],
+             'amount_formatted': format_amount(rec['amount_total'])}
             for rec in overdue_customers_grouped if rec['partner_id']
         ]
 
@@ -225,7 +238,6 @@ class SaleOrder(models.Model):
             (sale_orders / (quotations + sale_orders) * 100) if (quotations + sale_orders) > 0 else 0)
 
         SaleOrder = self.env['sale.order']
-        company_currency = self.env.company.currency_id
         today = fields.Date.today()
         month_start = today.replace(day=1)
         year_start = today.replace(month=1, day=1)
